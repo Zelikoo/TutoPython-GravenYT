@@ -21,13 +21,13 @@ print("Vous avez " + str(age) + " ans")
 if age < 18:
     montant = 7
 # si majeur -> 12€
-else:
+elif age >= 18:
     montant = 12
 
 #souhaitez-vous du pop-corn
-popcorn = input("Souhaitez-vous du pop-Corn ")
+popcorn = input("Souhaitez-vous du pop-Corn? ")
 
-if popcorn == "oui":
+if popcorn.upper() == "OUI":
     montant += 5
 
 print("Le montant est de " + str(montant) + "€")
