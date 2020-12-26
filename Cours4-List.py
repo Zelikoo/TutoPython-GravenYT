@@ -32,6 +32,7 @@ print(online_players)
 online_players.clear()
 print(online_players)
 
+
 ####################
 # exemple : jouer a la maitresse
 
@@ -48,4 +49,26 @@ print(notes)
 result = statistics.mean(notes)
 print("La moyenne de l'élève est de " + str(result))
 
+
 ####################
+# notion de split
+text = input("Entrer une chaine de la forme (email-pseudo-motdepasse)").split("-")
+print(text)
+print("Salut {}, ton email {}, ton mot de passe {}".format(text[1], text[0], text[2]))
+
+
+######################
+# generateur de phrase
+
+# demander en console une chaine de la forme "mot1/mot2/mot3...
+# transformer cette chaine en liste
+listMot = input("Entrer une liste de mot sous la forme \"mot1/mot2/mot3...\"").split("/")
+
+# la melanger
+shuffle(listMot)
+# si le nombre d'éléments de cette liste est inferieur à 10 -> afficher les deux premiers mots
+if len(listMot) < 10:
+    print(listMot[0], listMot[1])
+else:
+    # si le nombre d'élément est supérieur ou égal a 10 -> afficher les 3 derniers
+    print(listMot[len(listMot) - 3], listMot[len(listMot) - 2], listMot[len(listMot) - 1])
