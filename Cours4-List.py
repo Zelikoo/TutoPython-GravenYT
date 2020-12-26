@@ -68,7 +68,7 @@ listMot = input("Entrer une liste de mot sous la forme \"mot1/mot2/mot3...\"").s
 shuffle(listMot)
 # si le nombre d'éléments de cette liste est inferieur à 10 -> afficher les deux premiers mots
 if len(listMot) < 10:
-    print(listMot[0], listMot[1])
+    print(listMot[0:2])
 else:
     # si le nombre d'élément est supérieur ou égal a 10 -> afficher les 3 derniers
     print(listMot[len(listMot) - 3], listMot[len(listMot) - 2], listMot[len(listMot) - 1])
