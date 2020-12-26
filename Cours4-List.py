@@ -1,4 +1,6 @@
+# 2 facons d'importer des modules
 import statistics
+from random import shuffle
 
 # creer  une liste qui va stocker des pseudos pour simuler un jeu en ligne
 online_players =["Zeliko", "Graven", "Mv", "Zerator", "Poki"]
@@ -30,9 +32,20 @@ print(online_players)
 online_players.clear()
 print(online_players)
 
+####################
 # exemple : jouer a la maitresse
 
 notes = [
     8, 12, 10,
     15, 4, 20,
 ]
+
+print(notes)
+shuffle(notes)
+print(notes)
+
+# module statistic
+result = statistics.mean(notes)
+print("La moyenne de l'élève est de " + str(result))
+
+####################
