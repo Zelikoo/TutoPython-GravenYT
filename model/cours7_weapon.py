@@ -1,7 +1,7 @@
 class Weapon:
 
-    def __init__(self,name, damage):
-        seft.name = name
+    def __init__(self, name, damage):
+        self.name = name
         self.damage = damage
 
     def get_name(self):
